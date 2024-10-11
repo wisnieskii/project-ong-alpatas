@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 * {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,18 +9,26 @@
     box-sizing: border-box;
 
 }
+body{
+    width: 100%;
+    overflow-x: hidden;
+
+}
+
+
 
 header {
     background-color: #333;
     color: white;
     height: 100px;
-    margin-top: 0px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 
 }
 nav {
+    font-family: "Concert One", sans-serif;
+    font-weight: 600;
     display: flex; /* Exibe os itens na horizontal */
     justify-content: space-between; /* Espaça os elementos à esquerda e à direita */
     align-items: center; /* Alinha os itens verticalmente no centro */
@@ -57,35 +69,43 @@ section {
     height: 80vh;
     display: flex;
     flex-direction: column;
-
     margin-bottom: 20px;
     padding: 15px;
     border-radius: 5px;
 }
 #secao1{
-    background-color: darkcyan;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
-    height: 100vh;
+    height: 100%;
 
 }
-section#secao1 h2{
-    flex: 0 0 30%;
-    text-align:right;
-    margin-left: 20px;
+.section-left{
+    margin-top: 100px;
+    text-align:center;
+    align-items: center;
+    margin-left: 100px;
+
+}
+h2{
+    font-family: "Concert One", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 50px;
+    padding-bottom: 50px;
+    padding-top: 50px;
 
 }
 
 section.image-bar{
-    flex: 0 0 70%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    margin-right: 450px;
+    margin-left: 1150px;
+
 
 }
 
@@ -95,24 +115,66 @@ section.image-bar img{
     width: 250px;
     height: auto;
     object-fit: contain;
-
     border-radius: 120px;
     margin-right: -30%;
 }
 
 #secao2{
+    display: flex;
     background-color: #6dd5ed;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+p{
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 29px;
+    padding-bottom: 20px;
+    color: aliceblue;
+}
+.forms{
+    padding-bottom: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
+}
+.btn{
+    display: flex;
+    padding: 10px 20px;
+    background-color: #333;
+    width: 300px;
+    color: aliceblue;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 26px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.425);
+}
+.btn:hover{
+    background-color: #86a8e7;
 }
 #secao3{
     background-color:  #86a8e7;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
 }
-#secao4{
-    background-color: #5a8bee;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+.img-banner{
+    border-radius: 70px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
+
+.dog-banner{
+    position: absolute;
+    right: 170px;
+    width: 650px;
+    height: auto;
+}
+
 
 footer {
     background-color: #333;
@@ -121,7 +183,6 @@ footer {
     padding: 10px 0;
     position: relative;
     bottom: 0;
-    width: 100%;
     height: 100px;
     display: flex;
     justify-content: center;
